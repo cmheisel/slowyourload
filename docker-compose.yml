@@ -1,8 +1,9 @@
 web:
   build: .
+  command: ["/env/bin/python", "/app/slowyourload.py"]
   volumes:
     - ./:/app
   ports:
     - "5000:5000"
   environment:
-    - DEBUG=False
+    - DEBUG=True
