@@ -1,6 +1,7 @@
 web:
   image: cmheisel/slowyourload:latest
+  command: ["/env/bin/gunicorn", "-k gevent", "-w 4", "-b 0.0.0.0:5000", "slowyourload:app"]
   ports:
-    - "5000:5000"
+    - "80:5000"
   environment:
     - DEBUG=False
