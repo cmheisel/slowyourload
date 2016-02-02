@@ -7,6 +7,8 @@ Usage
 ========
 
 ```
-    http://<yourdomain>/<delay in seconds>/http://anotherdomain.com/some/thing.js
-    http://<yourdomain>/<delay in seconds>/https://secure.anotherdomain.com/some/thing.js
+    pip install -r requirements.txt
+    python ./slowyourload.py
+    http://localhost:5000/<delay in seconds>/http://anotherdomain.com/some/thing.js
+    http://localhost:5000/<delay in seconds>/https://secure.anotherdomain.com/some/thing.js
 ```
