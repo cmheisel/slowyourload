@@ -1,7 +1,5 @@
 web:
   image: cmheisel/slowyourload:latest
-  volumes:
-    - ./:/app
   ports:
     - "5000:5000"
   environment:
